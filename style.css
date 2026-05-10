@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.left-section {
+  width: 50%;
+  height: 100vh;
+  background: #f3f3f3;
+  position: relative;
+}
+
+.right-section {
+  width: 50%;
+  height: 100vh;
+  background: #be372b;
+  position: relative;
+  color: #f7e8d8;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #000;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.search-box {
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  width: 200px;
+  height: 40px;
+  background: #ececec;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+}
+
+.search-icon {
+  font-size: 35px;
+  rotate: -90deg;
+  color: #888;
+  margin-right: 10px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #777;
+}
+
+nav {
+  position: absolute;
+  top: 28px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  gap: 78px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7e8d8;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.vertical-text {
+  position: absolute;
+  left: 80px;
+  top: 20%;
+  font-family: "cormorant garamond", serif;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-style: italic;
+  font-size: 86px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.details {
+  position: absolute;
+  top: 15%;
+  left: 250px;
+  width: 250px;
+}
+
+.detail-item {
+  position: relative;
+  padding: 20px 0 20px 18px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.detail-item::before {
+  content: "•";
+  position: absolute;
+  left: -12px;
+  top: 16px;
+  font-size: 24px;
+  color: #b93b31;
+}
+
+.detail-item span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.detail-item p {
+  font-size: 20px;
+  color: #222;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.center-image {
+  position: absolute;
+  top: 450px;
+  left: 768px;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 300px;
+  z-index: 20;
+}
+
+.center-image img {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  top: 20%;
+  right: 108px;
+  width: 50%;
+}
+
+.content h2 {
+  font-size: 50px;
+  line-height: 0.92;
+  font-weight: 600;
+  margin-bottom: 42px;
+  color: #f7e8d8;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.info-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.bug-icon {
+  text-align: center;
+}
+
+.bug-icon img {
+  width: 80px;
+}
+
+.bug-icon p {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #f0d8c3;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.line {
+  width: 1px;
+  height: 205px;
+  background: #d4a193;
+}
+
+.extra-info p {
+  margin-bottom: 26px;
+  font-size: 20px;
+  line-height: 1;
+  color: #f0d8c3;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.extra-info p img {
+  width: 13px;
+  margin-right: 6px;
+}
+
+.extra-info span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff7ef;
+}
+
+.content h3 {
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #f2d3bb;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.toggle-group {
+  margin-top: 24px;
+}
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.toggle {
+  width: 36px;
+  height: 19px;
+  background: #d7c7b5;
+  border-radius: 30px;
+  position: relative;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.toggle-item span {
+  font-size: 16px;
+  color: #f7e8d8;
+  font-family: "Cormorant Garamond", serif;
+}
+
+button {
+  margin-top: 0px;
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  bottom: 20px;
+  background: #d1bf9f;
+  color: #111;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
